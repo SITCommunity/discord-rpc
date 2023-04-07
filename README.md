@@ -1,8 +1,7 @@
 [![Visistors](https://visitor-badge.glitch.me/badge?page_id=CyraTeam.discord-rpc)](https://github.com/EterNomm/Chathon)
 [![Discord](https://img.shields.io/discord/887650006977347594?label=EterNomm&logo=discord)](https://discord.gg/qpT2AeYZRN)
-[![Total Downloads Python](https://pepy.tech/badge/discord-rpc)](https://pepy.tech/project/discord-rpc)
-[![PyPI](https://img.shields.io/pypi/v/discord-rpc?label=PyPI%20Version&logo=pypi)](https://pypi.org/project/discord-rpc)
-[![PyPI - Status](https://img.shields.io/pypi/status/discord-rpc?label=Packages%20Status&logo=pypi)](https://pypi.org/project/discord-rpc)
+<a href="https://www.npmjs.com/package/dc-rpc"><img src="https://img.shields.io/npm/v/dc-rpc.svg?maxAge=3600" alt="NPM version" /></a>
+<a href="https://www.npmjs.com/package/dc-rpc"><img src="https://img.shields.io/npm/dt/dc-rpc.svg?maxAge=3600" alt="NPM downloads" /></a>
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LyQuid12/discord-rpc?label=Commit%20Activity&logo=github)](https://github.com/LyQuid12/discord-rpc)
 
 # Discord RPC
@@ -13,7 +12,7 @@ Discord-RPC Modifited From Python To JavaScript
 ## Install
 - NPM
 ```
-npm i discord-rpc
+npm i dc-rpc
 ```
 
 ## Quick example
