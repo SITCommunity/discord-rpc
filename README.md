@@ -1,7 +1,6 @@
 [![Visistors](https://visitor-badge.glitch.me/badge?page_id=CyraTeam.discord-rpc)](https://github.com/EterNomm/Chathon)
 [![Discord](https://img.shields.io/discord/887650006977347594?label=EterNomm&logo=discord)](https://discord.gg/qpT2AeYZRN)
-<a href="https://www.npmjs.com/package/dc-rpc"><img src="https://img.shields.io/npm/v/dc-rpc.svg?maxAge=3600" alt="NPM version" /></a>
-<a href="https://www.npmjs.com/package/dc-rpc"><img src="https://img.shields.io/npm/dt/dc-rpc.svg?maxAge=3600" alt="NPM downloads" /></a>
+    <a href="https://www.npmjs.com/package/dc-rpc" target="_blank"><img src="https://nodei.co/npm/dc-rpc.png?downloads=true&downloadRank=true&stars=true"></a>
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LyQuid12/discord-rpc?label=Commit%20Activity&logo=github)](https://github.com/LyQuid12/discord-rpc)
 
 # Discord RPC
