@@ -43,7 +43,7 @@ const uuid4122 = () => {
   return uuid;
 };
 
-export default {
+module.exports = {
   pid,
   register,
   uuid: uuid4122,

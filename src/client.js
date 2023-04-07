@@ -1,11 +1,11 @@
 'use strict';
 
-import EventEmitter from 'events';
-import { setTimeout, clearTimeout } from 'timers';
-import fetch from 'node-fetch';
-import transports from './transports';
-import { RPCCommands, RPCEvents, RelationshipTypes } from './constants';
-import { pid as getPid, uuid } from './util';
+const EventEmitter = require('events');
+const { setTimeout, clearTimeout } = require('timers');
+const fetch = require('node-fetch');
+const transports = require('./transports');
+const { RPCCommands, RPCEvents, RelationshipTypes } = require('./constants');
+const { pid: getPid, uuid } = require('./util');
 
 function subKey(event, args) {
   return `${event}${JSON.stringify(args)}`;
@@ -657,4 +657,4 @@ class RPCClient extends EventEmitter {
   }
 }
 
-export default RPCClient;
+module.exports = RPCClient;

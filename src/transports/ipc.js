@@ -1,9 +1,9 @@
 'use strict';
 
-import { createConnection } from 'net';
-import EventEmitter from 'events';
-import fetch from 'node-fetch';
-import { uuid } from '../util';
+const net = require('net');
+const EventEmitter = require('events');
+const fetch = require('node-fetch');
+const { uuid } = require('../util');
 
 const OPCodes = {
   HANDSHAKE: 0,
@@ -32,7 +32,7 @@ function getIPC(id = 0) {
         reject(new Error('Could not connect'));
       }
     };
-    const sock = createConnection(path, () => {
+    const sock = net.createConnection(path, () => {
       sock.removeListener('error', onerror);
       resolve(sock);
     });
@@ -168,8 +168,6 @@ class IPCTransport extends EventEmitter {
   }
 }
 
-export default IPCTransport;
-const _encode = encode;
-export { _encode as encode };
-const _decode = decode;
-export { _decode as decode };
+module.exports = IPCTransport;
+module.exports.encode = encode;
+module.exports.decode = decode;

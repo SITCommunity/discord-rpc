@@ -1,4 +1,6 @@
 'use strict';
 
-export const ipc = require('./ipc').default;
-export const websocket = require('./websocket').default;
+module.exports = {
+  ipc: require('./ipc'),
+  websocket: require('./websocket'),
+};

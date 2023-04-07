@@ -1,7 +1,7 @@
 'use strict';
 
-import EventEmitter from 'events';
-import { browser } from '../constants';
+const EventEmitter = require('events');
+const { browser } = require('../constants');
 
 // eslint-disable-next-line
 const WebSocket = browser ? window.WebSocket : require('ws');
@@ -74,4 +74,4 @@ class WebSocketTransport extends EventEmitter {
   }
 }
 
-export default WebSocketTransport;
+module.exports = WebSocketTransport;
