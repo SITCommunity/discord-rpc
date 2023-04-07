@@ -1,4 +1,3 @@
-<a href="https://www.npmjs.com/package/dc-rpc" target="_blank"><img src="https://nodei.co/npm/dc-rpc.png?downloads=true&downloadRank=true&stars=true"></a>
 <div align="center">
   <p>
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank"><img src="https://nodei.co/npm/dc-rpc.png?downloads=true&downloadRank=true&stars=true"></a>
