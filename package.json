@@ -1,0 +1,98 @@
+{
+  "name": "dc-rpc",
+  "version": "1.0.2",
+  "description": "Discord-RPC Modifited From Python To JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src test --ext=js",
+    "docs": "mkdir -p docs-out && docgen --source src --output docs-out/master.json --jsdoc jsdoc.json --custom docgen.json",
+    "example": "electron example/main.js",
+    "build:browser": "webpack-cli",
+    "prepublishOnly": "npm run lint && npm run build:browser",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyraTeam/Discord-RPC.git"
+  },
+  "keywords": [
+    "discord-rpc",
+    "discord",
+    "javascript"
+  ],
+  "author": "brokenedtz",
+  "jsdelivr": "browser.js",
+  "unpkg": "browser.js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CyraTeam/Discord-RPC/issues"
+  },
+  "homepage": "https://github.com/CyraTeam/Discord-RPC#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "ws": "^7.3.1"
+  },
+  "optionalDependencies": {
+    "register-scheme": "github:devsnek/node-register-scheme"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "discord.js-docgen": "github:discordjs/docgen",
+    "electron": "^7.1.9",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jsdoc-strip-async-await": "^0.1.0",
+    "webpack": "^4.40.0",
+    "webpack-cli": "^3.3.8"
+  },
+  "browser": {
+    "net": false,
+    "ws": false,
+    "uws": false,
+    "erlpack": false,
+    "electron": false,
+    "register-scheme": false,
+    "./src/transports/IPC.js": false,
+    "./src/transports/WebSocket.js": false,
+    "./src/transports/UWS.js": false,
+    "./src/transports/Erlpack.js": false,
+    "./src/transports/Electron.js": false,
+    "./src/transports/register-scheme.js": false,
+    "./src/transports/index.js": false,
+    "./src/index.js": false,
+    "./index.js": false,
+    "./package.json": false,
+    "./README.md": false,
+    "./LICENSE": false,
+    "./CHANGELOG.md": false,
+    "./webpack.config.js": false,
+    "./webpack.config.dev.js": false,
+    "./webpack.config.prod.js": false,
+    "./webpack.config.test.js": false,
+    "./webpack.config.dev.ts": false,
+    "./webpack.config.prod.ts": false,
+    "./webpack.config.test.ts": false,
+    "./webpack.config.dev.tsx": false,
+    "./webpack.config.prod.tsx": false,
+    "./webpack.config.test.tsx": false,
+    "./webpack.config.dev.js.map": false,
+    "./webpack.config.prod.js.map": false,
+    "./webpack.config.test.js.map": false,
+    "./webpack.config.dev.ts.map": false,
+    "./webpack.config.prod.ts.map": false,
+    "./webpack.config.test.ts.map": false,
+    "./webpack.config.dev.tsx.map": false,
+    "./webpack.config.prod.tsx.map": false,
+    "./webpack.config.test.tsx.map": false,
+    "./webpack.config.dev.js.LICENSE": false,
+    "./webpack.config.prod.js.LICENSE": false,
+    "./webpack.config.test.js.LICENSE": false,
+    "./webpack.config.dev.ts.LICENSE": false,
+    "./webpack.config.prod.ts.LICENSE": false,
+    "./webpack.config.test.ts.LICENSE": false,
+    "./webpack.config.dev.tsx.LICENSE": false,
+    "./webpack.config.prod.tsx.LICENSE": false,
+    "./webpack.config.test.tsx.LICENSE": false
+  }
+}
