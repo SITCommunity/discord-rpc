@@ -10,7 +10,7 @@
     <a href="https://discord.gg/qpT2AeYZRN" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/887650006977347594?label=EterNomm&logo=discord"></a>
     <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Visitor" src="https://visitor-badge.glitch.me/badge?page_id=CyraTeam.Discord-RPC"></a>
     <a href="https://github.com/CyraTeam/Discord-RPC/issues"><img alt="Issues" src="https://img.shields.io/github/issues/brokenedtzjs/Discord-RPC"></a>
-    <a href="https://github.com/LyQuid12/Discord-RPC"><img alt="Commit" src="https://img.shields.io/github/commit-activity/y/LyQuid12/Discord-RPC?label=Commit%20Activity&logo=github"></a>
+    <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Commit" src="https://img.shields.io/github/commit-activity/y/CyraTeam/Discord-RPC?label=Commit%20Activity&logo=github"></a>
   </p>
 </div>
 
