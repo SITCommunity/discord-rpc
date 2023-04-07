@@ -4,11 +4,6 @@
   "description": "Discord-RPC Modifited From Python To JavaScript",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint src test --ext=js",
-    "docs": "mkdir -p docs-out && docgen --source src --output docs-out/master.json --jsdoc jsdoc.json --custom docgen.json",
-    "example": "electron example/main.js",
-    "build:browser": "webpack-cli",
-    "prepublishOnly": "npm run lint && npm run build:browser",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
