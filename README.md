@@ -6,13 +6,14 @@
     <a href="https://twitter.com/cyrabot" terget="_blank"><img alt="twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fcyrabot"></a>
     <a href="https://nodejs.org/" target="_blank"><img alt="node-current" src="https://img.shields.io/node/v/distube"></a>
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank"><img alt="npm" src="https://img.shields.io/npm/dt/dc-rpc"></a>
-    <a href="https://github.com/skick1234/CyraTeam/discord-rpc" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/CyraTeam/discord-rpc"></a>
+    <a href="https://github.com/skick1234/CyraTeam/Discord-RPC" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/CyraTeam/Discord-RPC"></a>
     <a href="https://discord.gg/qpT2AeYZRN" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/887650006977347594?label=EterNomm&logo=discord"></a>
-    <a href="https://github.com/CyraTeam/discord-rpc"><img alt="Visitor" src="https://visitor-badge.glitch.me/badge?page_id=CyraTeam.discord-rpc"></a>
-    <a href="https://github.com/CyraTeam/discord-rpc/issues"><img alt="Issues" src="https://img.shields.io/github/issues/brokenedtzjs/discord-rpc"></a>
-    <a href="https://github.com/LyQuid12/discord-rpc"><img alt="Commit" src="https://img.shields.io/github/commit-activity/y/LyQuid12/discord-rpc?label=Commit%20Activity&logo=github"></a>
+    <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Visitor" src="https://visitor-badge.glitch.me/badge?page_id=CyraTeam.Discord-RPC"></a>
+    <a href="https://github.com/CyraTeam/Discord-RPC/issues"><img alt="Issues" src="https://img.shields.io/github/issues/brokenedtzjs/Discord-RPC"></a>
+    <a href="https://github.com/LyQuid12/Discord-RPC"><img alt="Commit" src="https://img.shields.io/github/commit-activity/y/LyQuid12/Discord-RPC?label=Commit%20Activity&logo=github"></a>
   </p>
 </div>
+
 # Discord RPC
 Discord-RPC Modifited From Python To JavaScript
 
@@ -21,7 +22,7 @@ Discord-RPC Modifited From Python To JavaScript
 ## Install
 - NPM
 ```
-npm i dc-rpc
+npm i dc-RPC
 ```
 
 ## Quick example
