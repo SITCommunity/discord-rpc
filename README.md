@@ -15,7 +15,7 @@
 </div>
 
 # Discord RPC
-Discord-RPC Modifited From Python To JavaScript
+[Discord-RPC](https://github.com/Eternomm/Discord-RPC) Modified From Python To JavaScript
 
 [![Changelog](https://img.shields.io/badge/Discord--RPC-Changelog-informational?style=for-the-badge&logo=github)](https://gist.github.com/LyQuid12/019b77be3cca743c4ada423ccf80b836)
 
