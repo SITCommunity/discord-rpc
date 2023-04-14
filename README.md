@@ -22,7 +22,7 @@
 ## Install
 - NPM
 ```
-npm i dc-RPC
+npm i dc-rpc
 ```
 
 ## Quick example
