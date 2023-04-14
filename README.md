@@ -8,7 +8,7 @@
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank"><img alt="npm" src="https://img.shields.io/npm/dt/dc-rpc"></a>
     <a href="https://github.com/skick1234/CyraTeam/Discord-RPC" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/CyraTeam/Discord-RPC"></a>
     <a href="https://discord.gg/qpT2AeYZRN" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/887650006977347594?label=EterNomm&logo=discord"></a>
-    <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Visitor" src="https://visitor-badge.glitch.me/badge?page_id=CyraTeam.Discord-RPC"></a>
+    <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Visitor" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FCyraTeam%2FDiscord-RPC%2F&countColor=%2337d67a&style=flat"></a>
     <a href="https://github.com/CyraTeam/Discord-RPC/issues"><img alt="Issues" src="https://img.shields.io/github/issues/brokenedtzjs/Discord-RPC"></a>
     <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Commit" src="https://img.shields.io/github/commit-activity/y/CyraTeam/Discord-RPC?label=Commit%20Activity&logo=github"></a>
   </p>
