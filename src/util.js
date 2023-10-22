@@ -1,6 +1,7 @@
 'use strict';
 
 const RpcError = require('../lib/error/RpcError');
+const { getRandomValues } = require('node:crypto');
 
 let register;
 try {
@@ -26,13 +27,8 @@ function pid() {
 };
 
 const uuid4122 = () => {
-  const crypto = window.crypto || window.msCrypto; // support for cross-browser
-  if (!crypto || !crypto.getRandomValues) {
-    throw new RpcError('This Crypto API not support in this browser');
-  };
-
   const randomValues = new Uint8Array(16);
-  crypto.getRandomValues(randomValues);
+  getRandomValues(randomValues);
 
   randomValues[6] = (randomValues[6] & 0x0f) | 0x40;
   randomValues[8] = (randomValues[8] & 0x3f) | 0x80;

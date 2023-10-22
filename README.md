@@ -1,23 +1,21 @@
 <div align="center">
   <p>
-    <a href="https://www.npmjs.com/package/dc-rpc" target="_blank"><img src="https://nodei.co/npm/dc-rpc.png?downloads=true&downloadRank=true&stars=true"></a>
+    <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img src="https://nodei.co/npm/dc-rpc.png?downloads=true&downloadRank=true&stars=true"></a>
   </p>
   <p>
-    <a href="https://twitter.com/cyrabot" terget="_blank"><img alt="twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fcyrabot"></a>
-    <a href="https://nodejs.org/" target="_blank"><img alt="node-current" src="https://img.shields.io/node/v/distube"></a>
-    <a href="https://www.npmjs.com/package/dc-rpc" target="_blank"><img alt="npm" src="https://img.shields.io/npm/dt/dc-rpc"></a>
-    <a href="https://github.com/skick1234/CyraTeam/Discord-RPC" target="_blank"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/CyraTeam/Discord-RPC"></a>
-    <a href="https://discord.gg/qpT2AeYZRN" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/887650006977347594?label=EterNomm&logo=discord"></a>
-    <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Visitor" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FCyraTeam%2FDiscord-RPC%2F&countColor=%2337d64a&style=flat"></a>
-    <a href="https://github.com/CyraTeam/Discord-RPC/issues"><img alt="Issues" src="https://img.shields.io/github/issues/brokenedtzjs/Discord-RPC"></a>
-    <a href="https://github.com/CyraTeam/Discord-RPC"><img alt="Commit" src="https://img.shields.io/github/commit-activity/y/CyraTeam/Discord-RPC?label=Commit%20Activity&logo=github"></a>
+    <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><img alt="node-current" src="https://img.shields.io/node/v/distube"></a>
+    <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img alt="npm" src="https://img.shields.io/npm/dt/dc-rpc"></a>
+    <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img alt="npm latest" src="https://img.shields.io/npm/v/dc-rpc/latest?color=blue&label=dc-rpc%40latest&logo=npm"></a>
+    <a href="https://github.com/skick1234/CyraTeam/discord-rpc" target="_blank" rel="noopener noreferrer"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/CyraTeam/discord-rpc"></a>
+    <a href="https://discord.gg/qpT2AeYZRN" target="_blank" rel="noopener noreferrer"><img alt="Discord" src="https://img.shields.io/discord/984857299858382908?label=CyraTeam&logo=discord"></a>
+    <a href="https://github.com/CyraTeam/discord-rpc" target="_blank" rel="noopener noreferrer"><img alt="Visitor" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FCyraTeam%2Fdiscord-rpc&countColor=%2337d67a&style=flat"></a>
+    <a href="https://github.com/CyraTeam/discord-rpc/issues" target="_blank" rel="noopener noreferrer"><img alt="Issues" src="https://img.shields.io/github/issues/CyraTeam/discord-rpc"></a>
+    <a href="https://github.com/CyraTeam/dc-rpc" target="_blank" rel="noopener noreferrer"><img alt="Commit" src="https://img.shields.io/github/commit-activity/y/CyraTeam/discord-rpc?label=Commit%20Activity&logo=github"></a>
   </p>
 </div>
 
 # Discord RPC
-[Discord-RPC](https://github.com/Eternomm/Discord-RPC) Modified From Python To JavaScript
-
-[![Changelog](https://img.shields.io/badge/Discord--RPC-Changelog-informational?style=for-the-badge&logo=github)](https://gist.github.com/LyQuid12/019b77be3cca743c4ada423ccf80b836)
+- **[Discord-RPC](https://www.npmjs.com/package/dc-rpc) is a powerful library developed by CyraTeam that enables developers to seamlessly integrate Rich Presence functionality into Discord applications or from Client ID**
 
 ## Install
 - NPM
@@ -27,16 +25,8 @@ npm i dc-rpc
 
 ## Quick example
 ```js
+coming soon!
 ```
-
-## Other
-<details>
-    <summary>Plan</summary>
-    <br>
-    <ul>
-        <li>-</li>
-    </ul>
-</details>
 
 Join our Discord server [here](https://discord.gg/qpT2AeYZRN)
 
@@ -44,5 +34,5 @@ Join our Discord server [here](https://discord.gg/qpT2AeYZRN)
 
 ```
 This Project under Apache License 2.0
-Copyright (c) 2021-present EterNomm
+© 2019 - 2023 CyraTeam. All Rights Reserved
 ```

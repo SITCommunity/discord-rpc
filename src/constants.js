@@ -4,9 +4,9 @@ function keyMirror(arr) {
   const tmp = {};
   for (const value of arr) {
     tmp[value] = value;
-  }
+  };
   return tmp;
-}
+};
 
 
 exports.browser = typeof window !== 'undefined';

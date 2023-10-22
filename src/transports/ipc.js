@@ -4,6 +4,7 @@ const net = require('net');
 const EventEmitter = require('events');
 const fetch = require('node-fetch');
 const { uuid } = require('../util');
+const RpcError = require('../../lib/error/RpcError');
 
 const OPCodes = {
   HANDSHAKE: 0,
@@ -16,11 +17,11 @@ const OPCodes = {
 function getIPCPath(id) {
   if (process.platform === 'win32') {
     return `\\\\?\\pipe\\discord-ipc-${id}`;
-  }
+  };
   const { env: { XDG_RUNTIME_DIR, TMPDIR, TMP, TEMP } } = process;
   const prefix = XDG_RUNTIME_DIR || TMPDIR || TMP || TEMP || '/tmp';
   return `${prefix.replace(/\/$/, '')}/discord-ipc-${id}`;
-}
+};
 
 function getIPC(id = 0) {
   return new Promise((resolve, reject) => {
@@ -29,8 +30,8 @@ function getIPC(id = 0) {
       if (id < 10) {
         resolve(getIPC(id + 1));
       } else {
-        reject(new Error('Could not connect'));
-      }
+        reject(new RpcError('Could not connect'));
+      };
     };
     const sock = net.createConnection(path, () => {
       sock.removeListener('error', onerror);
@@ -38,23 +39,23 @@ function getIPC(id = 0) {
     });
     sock.once('error', onerror);
   });
-}
+};
 
 async function findEndpoint(tries = 0) {
   if (tries > 30) {
-    throw new Error('Could not find endpoint');
-  }
+    throw new RpcError('Could not find endpoint');
+  };
   const endpoint = `http://127.0.0.1:${6463 + (tries % 10)}`;
   try {
     const r = await fetch(endpoint);
     if (r.status === 404) {
       return endpoint;
-    }
+    };
     return findEndpoint(tries + 1);
   } catch (e) {
     return findEndpoint(tries + 1);
-  }
-}
+  };
+};
 
 function encode(op, data) {
   data = JSON.stringify(data);
@@ -64,7 +65,7 @@ function encode(op, data) {
   packet.writeInt32LE(len, 4);
   packet.write(data, 8, len);
   return packet;
-}
+};
 
 const working = {
   full: '',
@@ -75,7 +76,7 @@ function decode(socket, callback) {
   const packet = socket.read();
   if (!packet) {
     return;
-  }
+  };
 
   let { op } = working;
   let raw;
@@ -85,7 +86,7 @@ function decode(socket, callback) {
     raw = packet.slice(8, len + 8);
   } else {
     raw = packet.toString();
-  }
+  };
 
   try {
     const data = JSON.parse(working.full + raw);
@@ -94,17 +95,17 @@ function decode(socket, callback) {
     working.op = undefined;
   } catch (err) {
     working.full += raw;
-  }
+  };
 
   decode(socket, callback);
-}
+};
 
 class IPCTransport extends EventEmitter {
   constructor(client) {
     super();
     this.client = client;
     this.socket = null;
-  }
+  };
 
   async connect() {
     const socket = this.socket = await getIPC();
@@ -125,16 +126,15 @@ class IPCTransport extends EventEmitter {
           case OPCodes.FRAME:
             if (!data) {
               return;
-            }
+            };
             if (data.cmd === 'AUTHORIZE' && data.evt !== 'ERROR') {
               findEndpoint()
                 .then((endpoint) => {
                   this.client.request.endpoint = endpoint;
-                })
-                .catch((e) => {
+                }).catch((e) => {
                   this.client.emit('error', e);
                 });
-            }
+            };
             this.emit('message', data);
             break;
           case OPCodes.CLOSE:
@@ -142,18 +142,18 @@ class IPCTransport extends EventEmitter {
             break;
           default:
             break;
-        }
+        };
       });
     });
-  }
+  };
 
   onClose(e) {
     this.emit('close', e);
-  }
+  };
 
   send(data, op = OPCodes.FRAME) {
     this.socket.write(encode(op, data));
-  }
+  };
 
   async close() {
     return new Promise((r) => {
@@ -161,12 +161,12 @@ class IPCTransport extends EventEmitter {
       this.send({}, OPCodes.CLOSE);
       this.socket.end();
     });
-  }
+  };
 
   ping() {
     this.send(uuid(), OPCodes.PING);
-  }
-}
+  };
+};
 
 module.exports = IPCTransport;
 module.exports.encode = encode;

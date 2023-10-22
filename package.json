@@ -1,14 +1,14 @@
 {
   "name": "dc-rpc",
   "version": "1.5.6",
-  "description": "Discord-RPC Modifited From Python To JavaScript",
+  "description": "discord-rpc Modifited From Python To JavaScript",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CyraTeam/Discord-RPC.git"
+    "url": "git+https://github.com/CyraTeam/discord-rpc.git"
   },
   "keywords": [
     "discord-rpc",
@@ -20,26 +20,26 @@
   "unpkg": "browser.js",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CyraTeam/Discord-RPC/issues"
+    "url": "https://github.com/CyraTeam/discord-rpc/issues"
   },
-  "homepage": "https://github.com/CyraTeam/Discord-RPC#readme",
+  "homepage": "https://github.com/CyraTeam/discord-rpc#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1",
-    "ws": "^7.3.1"
+    "node-fetch": "^2.6.7",
+    "ws": "^8.14.2"
   },
   "optionalDependencies": {
     "register-scheme": "github:devsnek/node-register-scheme"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "@babel/eslint-parser": "^7.22.15",
     "discord.js-docgen": "github:discordjs/docgen",
-    "electron": "^18.3.7",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "^2.18.2",
+    "electron": "^27.0.1",
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
     "jsdoc-strip-async-await": "^0.1.0",
-    "webpack": "^4.40.0",
-    "webpack-cli": "^3.3.8"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "browser": {
     "net": false,
@@ -59,35 +59,6 @@
     "./index.js": false,
     "./package.json": false,
     "./README.md": false,
-    "./LICENSE": false,
-    "./CHANGELOG.md": false,
-    "./webpack.config.js": false,
-    "./webpack.config.dev.js": false,
-    "./webpack.config.prod.js": false,
-    "./webpack.config.test.js": false,
-    "./webpack.config.dev.ts": false,
-    "./webpack.config.prod.ts": false,
-    "./webpack.config.test.ts": false,
-    "./webpack.config.dev.tsx": false,
-    "./webpack.config.prod.tsx": false,
-    "./webpack.config.test.tsx": false,
-    "./webpack.config.dev.js.map": false,
-    "./webpack.config.prod.js.map": false,
-    "./webpack.config.test.js.map": false,
-    "./webpack.config.dev.ts.map": false,
-    "./webpack.config.prod.ts.map": false,
-    "./webpack.config.test.ts.map": false,
-    "./webpack.config.dev.tsx.map": false,
-    "./webpack.config.prod.tsx.map": false,
-    "./webpack.config.test.tsx.map": false,
-    "./webpack.config.dev.js.LICENSE": false,
-    "./webpack.config.prod.js.LICENSE": false,
-    "./webpack.config.test.js.LICENSE": false,
-    "./webpack.config.dev.ts.LICENSE": false,
-    "./webpack.config.prod.ts.LICENSE": false,
-    "./webpack.config.test.ts.LICENSE": false,
-    "./webpack.config.dev.tsx.LICENSE": false,
-    "./webpack.config.prod.tsx.LICENSE": false,
-    "./webpack.config.test.tsx.LICENSE": false
+    "./LICENSE": false
   }
 }
