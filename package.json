@@ -4,7 +4,7 @@
   "description": "discord-rpc Modifited From Python To JavaScript",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -31,8 +31,7 @@
     "register-scheme": "github:devsnek/node-register-scheme"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.15",
-    "discord.js-docgen": "github:discordjs/docgen",
+    "jest": "^29.7.0",
     "electron": "^27.0.1",
     "eslint": "^8.51.0",
     "eslint-config-airbnb-base": "^15.0.0",

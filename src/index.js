@@ -3,7 +3,7 @@
 const util = require('./util');
 
 module.exports = {
-  Client: require('./client'),
+  RpcClient: require('./client'),
   register(id) {
     return util.register(`discord-${id}`);
   },
