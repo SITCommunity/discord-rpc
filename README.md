@@ -36,3 +36,10 @@ Join our Discord server [here](https://discord.gg/qpT2AeYZRN)
 This Project under Apache License 2.0
 © 2019 - 2023 CyraTeam. All Rights Reserved
 ```
+
+## Original Repository
+```
+This Repository Is Forked From Original Discord-RPC by Senophyx
+```
+- [Senophyx](https://github.com/Senophyx/)
+- [Discord-RPC](https://github.com/Senophyx/Discord-RPC)
