@@ -38,8 +38,4 @@ This Project under Apache License 2.0
 ```
 
 ## Original Repository
-```
-This Repository Is Forked From Original Discord-RPC by Senophyx
-```
-- [Senophyx](https://github.com/Senophyx/)
-- [Discord-RPC](https://github.com/Senophyx/Discord-RPC)
+This Repository Is Forked from original [Discord-RPC](https://github.com/Senophyx/Discord-RPC) by [Senophyx](https://github.com/Senophyx).
