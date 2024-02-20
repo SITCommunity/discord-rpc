@@ -25,7 +25,11 @@ npm i dc-rpc
 
 ## Quick example
 ```js
-coming soon!
+const { RpcClient } = require('dc-rpc');
+
+const rpc = new RpcClient({ transport: '...' }); // transport: ipc or websocket
+
+coming soon;
 ```
 
 Join our Discord server [here](https://discord.gg/qpT2AeYZRN)
@@ -34,7 +38,7 @@ Join our Discord server [here](https://discord.gg/qpT2AeYZRN)
 
 ```
 This Project under Apache License 2.0
-© 2019 - 2023 CyraTeam. All Rights Reserved
+© 2019 - 2024 CyraTeam. All Rights Reserved
 ```
 
 ## Original Repository
