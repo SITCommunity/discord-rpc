@@ -1,6 +1,14 @@
+/**
+ * @author brokenedtzjs
+ * @license Apache-2.0
+ * @copyright brokenedtzjs
+ * @file index.js
+ */
+
 'use strict';
 
-//Client Options
+// =================================================================
+
 class RpcClientOptions extends Object {
     constructor(transport) {
         /**
@@ -12,7 +20,8 @@ class RpcClientOptions extends Object {
     };
 };
 
-//Login Options
+// =================================================================
+
 class RpcLoginOptions extends Object {
     constructor(clientId, clientSecret, accessToken, rpcToken, tokenEndpoint, scopes) {
         /**
@@ -42,4 +51,8 @@ class RpcLoginOptions extends Object {
     };
 };
 
+// =================================================================
+
 module.exports = { RpcClientOptions, RpcLoginOptions };
+
+// =================================================================

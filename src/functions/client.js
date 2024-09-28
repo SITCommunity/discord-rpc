@@ -1,16 +1,24 @@
+/**
+ * @author brokenedtzjs
+ * @license Apache-2.0
+ * @copyright brokenedtzjs
+ * @file client.js
+ */
+
 'use strict';
 
-const RpcTypeError = require('../lib/error/RpcTypeError');
-const RpcError = require('../lib/error/RpcError');
-const RpcRangeError = require('../lib/error/RpcRangeError');
-const { RpcClientOptions, RpcLoginOptions } = require('./options.js');
+// =================================================================
+
+const { RpcError, RpcRangeError, RpcTimeout, RpcTypeError } = require('../../lib/error');
+const { RpcClientOptions, RpcLoginOptions } = require('../options');
 const EventEmitter = require('events');
 const { setTimeout, clearTimeout } = require('timers');
 const fetch = require('node-fetch');
-const transports = require('./transports');
-const { RPCCommands, RPCEvents, RelationshipTypes } = require('./constants');
-const { pid: getPid, uuid } = require('./util');
-const RpcTimeout = require('../lib/error/RpcTimeout');
+const transports = require('../transports/index.js');
+const { RPCCommands, RPCEvents, RelationshipTypes } = require('./constants.js');
+const { pid: getPid, uuid } = require('./util.js');
+
+// =================================================================
 
 function subKey(event, args) {
   return `${event}${JSON.stringify(args)}`;
@@ -47,7 +55,7 @@ class RpcClient extends EventEmitter {
 
     const Transport = transports[this.options.transport];
     if (!Transport) {
-      throw new RpcTypeError('RPC_INVALID_TRANSPORT', this.options.transport);
+      throw new RpcTypeError('RPC_INVALID_TRANSPORT: "' + this.options.transport + '". valid transport is "ipc" or "websocket"');
     };
 
     this.fetch = (method, path, { data, query } = {}) => fetch(`${this.fetch.endpoint}${path}${query ? new URLSearchParams(query) : ''}`,
@@ -645,4 +653,8 @@ class RpcClient extends EventEmitter {
   };
 };
 
+// =================================================================
+
 module.exports = RpcClient;
+
+// =================================================================

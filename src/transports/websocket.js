@@ -1,8 +1,15 @@
+/**
+ * @author brokenedtzjs
+ * @license Apache-2.0
+ * @copyright brokenedtzjs
+ * @file websocket.js
+ */
+
 'use strict';
 
 const EventEmitter = require('events');
-const { browser } = require('../constants');
-const RpcError = require('../../lib/error/RpcError');
+const { browser } = require('../functions/constants');
+const { RpcError } = require('../../lib/error');
 
 // eslint-disable-next-line
 const WebSocket = browser ? window.WebSocket : require('ws');

@@ -1,23 +1,38 @@
+/**
+ * @author brokenedtzjs
+ * @license Apache-2.0
+ * @copyright brokenedtzjs
+ * @file util.js
+ */
+
 'use strict';
 
-const RpcError = require('../lib/error/RpcError');
+// =================================================================
+
+const { RpcError } = require('../../lib/error')
 const { getRandomValues } = require('node:crypto');
+const { app } = require('electron');
+
+// =================================================================
 
 let register;
 try {
-  const { app } = require('electron');
   register = app.setAsDefaultProtocolClient.bind(app);
 } catch (err) {
   try {
     register = require('register-scheme');
   } catch (e) {
-    throw new RpcError(); // eslint-disable-line no-empty
+    throw new RpcError(e); // eslint-disable-line no-empty
   };
 };
+
+// =================================================================
 
 if (typeof register !== 'function') {
   register = () => false;
 };
+
+// =================================================================
 
 function pid() {
   if (typeof process !== 'undefined') {
@@ -25,6 +40,8 @@ function pid() {
   };
   return null;
 };
+
+// =================================================================
 
 const uuid4122 = () => {
   const randomValues = new Uint8Array(16);
@@ -42,8 +59,12 @@ const uuid4122 = () => {
   return uuid;
 };
 
+// =================================================================
+
 module.exports = {
   pid,
   register,
   uuid: uuid4122,
 };
+
+// =================================================================

@@ -1,10 +1,21 @@
+/**
+ * @author brokenedtzjs
+ * @license Apache-2.0
+ * @copyright brokenedtzjs
+ * @file ipc.js
+ */
+
 'use strict';
+
+// =================================================================
 
 const net = require('net');
 const EventEmitter = require('events');
 const fetch = require('node-fetch');
-const { uuid } = require('../util');
-const RpcError = require('../../lib/error/RpcError');
+const { uuid } = require('../functions/util');
+const { RpcError } = require('../../lib/error');
+
+// =================================================================
 
 const OPCodes = {
   HANDSHAKE: 0,
@@ -13,6 +24,8 @@ const OPCodes = {
   PING: 3,
   PONG: 4,
 };
+
+// =================================================================
 
 function getIPCPath(id) {
   if (process.platform === 'win32') {

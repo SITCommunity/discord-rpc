@@ -1,4 +1,13 @@
+/**
+ * @author brokenedtzjs
+ * @license Apache-2.0
+ * @copyright brokenedtzjs
+ * @file constants.js
+ */
+
 'use strict';
+
+// =================================================================
 
 function keyMirror(arr) {
   const tmp = {};
@@ -8,6 +17,8 @@ function keyMirror(arr) {
   return tmp;
 };
 
+
+// =================================================================
 
 exports.browser = typeof window !== 'undefined';
 
@@ -176,3 +187,5 @@ exports.RelationshipTypes = {
   PENDING_OUTGOING: 4,
   IMPLICIT: 5,
 };
+
+// =================================================================

@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/CyraTeam/discord-rpc#readme",
   "dependencies": {
+    "discord.js": "^14.14.1",
     "node-fetch": "^2.6.7",
     "ws": "^8.14.2"
   },
@@ -31,11 +32,11 @@
     "register-scheme": "github:devsnek/node-register-scheme"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
     "electron": "^27.0.1",
     "eslint": "^8.51.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1",
+    "jest": "^29.7.0",
     "jsdoc-strip-async-await": "^0.1.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"

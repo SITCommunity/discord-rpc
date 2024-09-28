@@ -9,13 +9,13 @@
 
 // =================================================================
 
-const util = require('./functions/util');
+import * as util from './functions/util';
+import { RpcClient } from './functions/client';
 
-module.exports = {
-  RpcClient: require('./functions/client'),
-  register(id) {
+export const register = (id: string): string => {
     return util.register(`discord-${id}`);
-  },
 };
+
+export { RpcClient };
 
 // =================================================================
