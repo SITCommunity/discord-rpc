@@ -1,6 +1,6 @@
 {
   "name": "dc-rpc",
-  "version": "1.5.9",
+  "version": "1.5.7",
   "description": "Discord-RPC is a powerful library developed by SITCommunity that enables developers to seamlessly integrate Rich Presence functionality into Discord applications or from Client ID",
   "contributors": [
     "BrokenEdtz <brokenedtz@cyrateam.xyz>"
