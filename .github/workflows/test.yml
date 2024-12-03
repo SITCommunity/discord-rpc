@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         uses: ./packages/actions/pnpm
         
-      - name: Run tests and collect coverage | nodb
+      - name: Run tests and collect coverage
         run: |
           cd packages/discord-rpc
           pnpm i && pnpm run test

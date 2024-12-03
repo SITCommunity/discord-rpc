@@ -51,6 +51,7 @@ commit_parsers = [
   { message = "^revert", group = "<!-- 9 --> Revert" },
 	{ message = "^typings", group = "<!-- 10 --> Typings"},
   { message = "^revamp", group = "<!-- 11 --> Revamp" },
+  { message = "^new", group = "<!-- 12 --> New" },
 ]
 
 filter_commits = true
