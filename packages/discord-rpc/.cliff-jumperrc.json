@@ -1,0 +1,6 @@
+{
+    "name": "discord-rpc",
+    "packagePath": "packages/discord-rpc",
+    "tagTemplate": "{{new-version}}",
+    "identifierBase": false
+}

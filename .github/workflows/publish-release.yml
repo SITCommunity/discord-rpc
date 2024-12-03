@@ -1,0 +1,33 @@
+name: Publish Release
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  npm-publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Checkout Repositories
+        uses: actions/checkout@v4
+
+      - name: Install Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        uses: ./packages/actions/pnpm
+
+      - name: Publish package
+        if: github.repository_owner == 'sitcommunity'
+        run: |
+          pnpm --filter ./packages/discord-rpc i
+          pnpm --filter ./packages/discord-rpc publish --provenance --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

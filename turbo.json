@@ -1,0 +1,42 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"remoteCache": {
+		"enabled": true
+	},
+	"globalDependencies": ["tsconfig.json"],
+    "tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"inputs": ["src/**", "package.json", "tsconfig.json"],
+			"outputs": ["dist/**"],
+			"outputLogs": "errors-only"
+		},
+        "test": {
+			"dependsOn": ["^build"],
+			"inputs": ["__tests__/**", "src/**", "jest.config.js", "package.json", "tsconfig.json"],
+			"outputs": ["coverage/**"],
+			"outputLogs": "new-only"
+		},
+        "format": {
+			"dependsOn": ["^build"],
+			"inputs": [
+				"../../.prettierrc.json",
+				"src/**",
+				"package.json"
+			],
+			"outputs": [],
+			"outputLogs": "errors-only"
+		},
+        "changelog": {
+			"inputs": ["cliff.toml"],
+			"outputs": ["CHANGELOG.md"],
+			"outputLogs": "full"
+		},
+		"release": {
+			"dependsOn": ["^build"],
+			"inputs": ["CHANGELOG.md", "package.json"],
+			"outputs": [],
+			"outputLogs": "full"
+		}
+    }
+}

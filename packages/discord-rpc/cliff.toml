@@ -1,0 +1,62 @@
+[changelog]
+header = """
+# Changelog\n
+All notable changes from Discord-RPC will be documented in this file.\n
+"""
+
+body = """
+{%- macro remote_url() -%}
+  https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}
+{%- endmacro -%}
+{% if version %}\
+    ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+{% else %}\
+    ## [unreleased]
+{% endif %}\
+{% for group, commits in commits | group_by(attribute="group") %}
+    ### {{ group | striptags | trim | upper_first }}
+    {% for commit in commits %}
+        - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
+            {% if commit.breaking %}[**breaking**] {% endif %}\
+            {{ commit.message | upper_first }}\
+    {% endfor %}
+{% endfor %}\
+{% if github.contributors | filter(attribute="is_first_time", value=true) | length %}\
+	\n### New Contributors\n
+	{% for contributor in github.contributors | filter(attribute="is_first_time", value=true) %}\
+		* @{{ contributor.username }} made their first contribution in #{{ contributor.pr_number }}
+	{% endfor %}\
+{% endif %}\n
+"""
+footer = ""
+trim = true
+
+[git]
+conventional_commits = true
+filter_unconventional = true
+commit_parsers = [
+  { message = "^feat", group = "<!-- 0 --> Features" },
+  { message = "^fix", group = "<!-- 1 --> Bug Fixes" },
+  { message = "^doc", group = "<!-- 3 --> Documentation" },
+  { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
+  { message = "^refactor", group = "<!-- 2 --> Refactor" },
+  { message = "^style", group = "<!-- 5 --> Styling" },
+  { message = "^test", group = "<!-- 6 --> Testing" },
+  { message = "^chore\\(release\\): prepare for", skip = true },
+  { message = "^chore\\(deps.*\\)", skip = true },
+  { message = "^chore\\(pr\\)", skip = true },
+  { message = "^chore\\(pull\\)", skip = true },
+  { message = "^chore|^ci", group = "<!-- 7 --> Miscellaneous Tasks", skip = true },
+  { body = ".*security", group = "<!-- 8 --> Security" },
+  { message = "^revert", group = "<!-- 9 --> Revert" },
+	{ message = "^typings", group = "<!-- 10 --> Typings"},
+  { message = "^revamp", group = "<!-- 11 --> Revamp" },
+]
+
+filter_commits = true
+topo_order = false
+sort_commits = "newest"
+
+[remote.github]
+owner = "SITCommunity"
+repo = "discord-rpc"

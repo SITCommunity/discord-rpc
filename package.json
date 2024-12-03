@@ -1,64 +1,37 @@
 {
-  "name": "dc-rpc",
-  "version": "1.5.6",
-  "description": "discord-rpc Modifited From Python To JavaScript",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CyraTeam/discord-rpc.git"
-  },
-  "keywords": [
-    "discord-rpc",
-    "discord",
-    "javascript"
-  ],
-  "author": "brokenedtz",
-  "jsdelivr": "browser.js",
-  "unpkg": "browser.js",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CyraTeam/discord-rpc/issues"
-  },
-  "homepage": "https://github.com/CyraTeam/discord-rpc#readme",
-  "dependencies": {
-    "discord.js": "^14.14.1",
-    "node-fetch": "^2.6.7",
-    "ws": "^8.14.2"
-  },
-  "optionalDependencies": {
-    "register-scheme": "github:devsnek/node-register-scheme"
-  },
-  "devDependencies": {
-    "electron": "^27.0.1",
-    "eslint": "^8.51.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "jest": "^29.7.0",
-    "jsdoc-strip-async-await": "^0.1.0",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
-  },
-  "browser": {
-    "net": false,
-    "ws": false,
-    "uws": false,
-    "erlpack": false,
-    "electron": false,
-    "register-scheme": false,
-    "./src/transports/IPC.js": false,
-    "./src/transports/WebSocket.js": false,
-    "./src/transports/UWS.js": false,
-    "./src/transports/Erlpack.js": false,
-    "./src/transports/Electron.js": false,
-    "./src/transports/register-scheme.js": false,
-    "./src/transports/index.js": false,
-    "./src/index.js": false,
-    "./index.js": false,
-    "./package.json": false,
-    "./README.md": false,
-    "./LICENSE": false
-  }
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "@sitcommunity/discord-rpc",
+	"version": "0.0.0",
+	"description": "Discord-RPC is a powerful library developed by SITCommunity that enables developers to seamlessly integrate Rich Presence functionality into Discord applications or from Client ID",
+	"private": true,
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SITCommunity/discord-rpc.git"
+	},
+	"keywords": [
+		"discord-rpc",
+		"discord",
+		"javascript"
+	],
+	"bugs": {
+		"url": "https://github.com/SITCommunity/discord-rpc/issues"
+	},
+	"contributors": [
+		"BrokenEdtz <brokenedtz@cyrateam.xyz>"
+	],
+	"author": "brokenedtz",
+	"license": "MIT",
+	"homepage": "https://cyrateam.xyz/project/discord-rpc",
+	"funding": "https://github.com/SITCommunity/discord-rpc?sponsor",
+	"devDependencies": {
+		"prettier": "^3.3.3",
+		"turbo": "^2.0.14",
+		"typescript": "^5.6.3"
+	},
+	"type": "module",
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "pnpm@9.8.0"
 }
