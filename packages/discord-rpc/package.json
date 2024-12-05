@@ -25,7 +25,7 @@
   "scripts": {
     "test": "pnpm run test:typescript && pnpm run test:jest",
     "test:typescript": "tsc --noEmit && tsd",
-    "test:jest": "jest --coverage",
+    "test:jest": "jest --coverage --passWithNoTests",
     "update": "pnpm --recursive update --interactive",
     "update:latest": "pnpm --recursive update --interactive --latest",
     "changelog": "git cliff --prepend ./CHANGELOG.md -u -c ./cliff.toml"
