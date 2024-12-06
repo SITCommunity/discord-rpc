@@ -29,7 +29,7 @@ jobs:
       - name: Run tests and collect coverage
         run: |
           cd packages/discord-rpc
-          pnpm i && pnpm run test
+          pnpm i && pnpm run test:ci
 
       # Copy and paste the codecov/test-results-action here
       - name: Upload coverage to Codecov
