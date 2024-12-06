@@ -7,7 +7,7 @@
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img alt="npm" src="https://img.shields.io/npm/dt/dc-rpc"></a>
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img alt="npm latest" src="https://img.shields.io/npm/v/dc-rpc/latest?color=blue&label=dc-rpc%40latest&logo=npm"></a>
     <a href="https://github.com/skick1234/SITCommunity/discord-rpc" target="_blank" rel="noopener noreferrer"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/SITCommunity/discord-rpc"></a>
-    <a href="https://discord.gg/qpT2AeYZRN" target="_blank" rel="noopener noreferrer"><img alt="Discord" src="https://img.shields.io/discord/984857299858382908?label=EterNomm&logo=discord"></a>
+    <a href="https://discord.gg/qpT2AeYZRN" target="_blank" rel="noopener noreferrer"><img alt="Discord" src="https://img.shields.io/discord/887650006977347594?label=EterNomm&logo=discord"></a>
     <a href="https://discord.cyrateam.xyz" target="_blank" rel="noopener noreferrer"><img alt="Discord" src="https://img.shields.io/discord/984857299858382908?label=SITCommunity&logo=discord"></a>
     <a href="https://github.com/SITCommunity/discord-rpc" target="_blank" rel="noopener noreferrer"><img alt="Visitor" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FCyraTeam%2Fdiscord-rpc&countColor=%2337d67a&style=flat"></a>
     <a href="https://github.com/SITCommunity/discord-rpc/issues" target="_blank" rel="noopener noreferrer"><img alt="Issues" src="https://img.shields.io/github/issues/SITCommunity/discord-rpc"></a>
