@@ -286,7 +286,7 @@ class RpcClient extends EventEmitter {
       },
     }));
   };
-  
+
   setVoiceSettings(args) {
     return this.request(RPCCommands.SET_VOICE_SETTINGS, {
       automatic_gain_control: args.automaticGainControl,

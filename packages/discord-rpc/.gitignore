@@ -11,3 +11,6 @@ junit.xml
 
 # Generated files
 typings/index.d.mts
+
+# Ignored Tests
+test-node.js

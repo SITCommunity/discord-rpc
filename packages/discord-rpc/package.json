@@ -1,6 +1,6 @@
 {
   "name": "dc-rpc",
-  "version": "1.5.8",
+  "version": "1.5.7",
   "description": "Discord-RPC is a powerful library developed by SITCommunity that enables developers to seamlessly integrate Rich Presence functionality into Discord applications or from Client ID",
   "contributors": [
     "BrokenEdtz <brokenedtz@cyrateam.xyz>"
@@ -25,7 +25,7 @@
   "scripts": {
     "test": "pnpm run test:typescript && pnpm run test:jest",
     "test:typescript": "tsc --noEmit && tsd",
-    "test:jest": "jest --coverage --passWithNoTests",
+    "test:jest": "jest --coverage",
     "update": "pnpm --recursive update --interactive",
     "update:latest": "pnpm --recursive update --interactive --latest",
     "changelog": "git cliff --prepend ./CHANGELOG.md -u -c ./cliff.toml"
@@ -57,7 +57,7 @@
   },
   "packageManager": "pnpm@9.8.0",
   "dependencies": {
-    "node-fetch": "^3.3.2",
+    "node-fetch": "^2.7.0",
     "tslib": "^2.7.0",
     "ws": "^8.14.2"
   },
