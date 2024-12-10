@@ -1,6 +1,6 @@
 /**
  * @author brokenedtzjs
- * @license Apache-2.0
+ * @license MIT
  * @copyright brokenedtzjs
  * @file ipc.js
  */
