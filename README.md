@@ -3,7 +3,7 @@
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img src="https://nodei.co/npm/dc-rpc.png?downloads=true&downloadRank=true&stars=true"></a>
   </p>
   <p>
-    <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><img alt="node-current" src="https://img.shields.io/node/v/distube"></a>
+    <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><img alt="node-current" src="https://img.shields.io/node/v/dc-rpc"></a>
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img alt="npm" src="https://img.shields.io/npm/dt/dc-rpc"></a>
     <a href="https://www.npmjs.com/package/dc-rpc" target="_blank" rel="noopener noreferrer"><img alt="npm latest" src="https://img.shields.io/npm/v/dc-rpc/latest?color=blue&label=dc-rpc%40latest&logo=npm"></a>
     <a href="https://github.com/skick1234/SITCommunity/discord-rpc" target="_blank" rel="noopener noreferrer"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/SITCommunity/discord-rpc"></a>
