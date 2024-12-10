@@ -2,6 +2,13 @@
 
 All notable changes from Discord-RPC will be documented in this file.
 
+## [unreleased]
+
+### Bug Fixes
+
+- Wrong timeout error code #5
+- Typo on error code #4
+
 ## [1.5.8] - 2024-12-06
 
 ### New
