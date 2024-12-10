@@ -1,6 +1,6 @@
 /**
  * @author brokenedtzjs
- * @license Apache-2.0
+ * @license MIT
  * @copyright brokenedtzjs
  * @file client.js
  */
@@ -88,7 +88,7 @@ class RpcClient extends EventEmitter {
     this._connectPromise = new Promise((resolve, reject) => {
       this.clientId = clientId;
       const timeout = setTimeout(() => {
-        reject(new RpcTimeout(errorCode.Timeout));
+        reject(new RpcTimeout(errorCode.RpcTimeout));
       }, 10e3);
       timeout.unref();
       this.once('connected', () => {
