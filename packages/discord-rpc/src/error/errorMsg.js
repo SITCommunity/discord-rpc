@@ -18,7 +18,7 @@ const errorMsg = {
     [errorCode.ConnectionError]: (e) => `Connection was closed unexpectedly. ${e}`,
     [errorCode.MessageError]: (e) => `Received an invalid message from the RPC service. ${e}`,
     [errorCode.TimestampError]: (e) => `Received an invalid timestamp from the RPC service: "${e}"`,
-    [errorCode.COnnectionFailed]: 'Could not connect to RPC',
+    [errorCode.ConnectionFailed]: 'Could not connect to RPC',
     [errorCode.MissingEndpoint]: 'Could not find endpoint',
     [errorCode.FailLoadProtocol]: (e) => `Protocol registration failed. Details: ${e}`,
     [errorCode.WsError]: (e) => `Error while closing connection. Details: ${e}`,
