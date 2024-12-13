@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      events:
+        specifier: ^3.3.0
+        version: 3.3.0
       node-fetch:
         specifier: ^2.7.0
         version: 2.7.0
@@ -25,9 +28,6 @@ importers:
       '@favware/cliff-jumper':
         specifier: ^5.0.0
         version: 5.0.0
-      '@types/events':
-        specifier: ^3.0.3
-        version: 3.0.3
       '@types/node':
         specifier: ^22.10.1
         version: 22.10.1
@@ -534,9 +534,6 @@ packages:
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
-
-  '@types/events@3.0.3':
-    resolution: {integrity: sha512-trOc4AAUThEz9hapPtSd7wf5tiQKvTtu5b371UxXdTuqzIh0ArcRspRP0i0Viu+LXstIQ1z96t1nsPxT9ol01g==}
 
   '@types/graceful-fs@4.1.9':
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
@@ -3243,8 +3240,6 @@ snapshots:
       '@types/json-schema': 7.0.15
 
   '@types/estree@1.0.6': {}
-
-  '@types/events@3.0.3': {}
 
   '@types/graceful-fs@4.1.9':
     dependencies:
