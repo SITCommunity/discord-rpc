@@ -40,8 +40,8 @@ const client = new RpcClient({ transport: 'ipc' }); // currently websocket not s
 
 // ================================================================
 
-// Your Client ID
-const Id = 'Client ID';
+// Your Applications Client ID
+const Id = 'client_id';
 
 // Login To Discord RPC
 await client.login({ clientId: Id });
@@ -50,24 +50,16 @@ await client.login({ clientId: Id });
 
 // Function When Client Is Ready
 client.on('ready', () => {
-  console.log('Logged in as', client.application); // Console: Logged in as brokenedtz
-  console.log('Authed for user', client.user);
-  /** Console:
-   * Authed for user {
-   * id: 'user_id',
-   * username: 'brokenedtz',
-   * discriminator: '0',
-   * global_name: 'リオ',
-   * avatar: 'avatar_id',
-   * avatar_decoration_data: null,
-   * bot: false,
-   * flags: flag_id,
-   * premium_type: 0
-   * }
-   */
+	console.log('Authed for user:', client.user.username); // Console Output: Authed for user: [discord_username]
 
-  // Set Activity (Example)
-  client.setActivity({ state: 'it work!!!', details: 'Testing RPC', startTimestamp: Date.now() });
+	// Set Activity (Example)
+	client.setActivity({
+		state: 'it work!!!',
+		details: 'Testing RPC',
+		largeImageKey: 'icon_name', // From Discord Applications Rich Presence Assets
+		largeImageText: 'this is icon',
+		startTimestamp: Date.now(),
+	});
 });
 
 // ================================================================
@@ -76,9 +68,11 @@ client.on('ready', () => {
 client.destroy();
 ```
 
-Join our Discord server [here](https://discord.gg/qpT2AeYZRN)
+## Example Results
 
-## Licence & Copyright
+![presence](https://github.com/user-attachments/assets/a53e95ff-e9e5-4b86-8c52-7935cd23d469)
+
+## License
 
 ```
 This Project under MIT License

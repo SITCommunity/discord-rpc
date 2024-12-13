@@ -1,7 +1,7 @@
 'use strict';
 
 // Import module
-const { RpcClient } = require('dc-rpc');
+const { RpcClient, register } = require('dc-rpc');
 
 // Spy on console.log before test
 beforeEach(() => {
@@ -20,6 +20,7 @@ describe('Discord RPC Tests', () => {
         const Id = '1314548864682037259';
         const client = new RpcClient({ transport: 'ipc' });
 
+        register(Id);
         await client.login({ clientId: Id });
 
         client.on('ready', () => {
