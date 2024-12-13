@@ -159,11 +159,63 @@ export type ActivityArgs = {
     spectateSecret?: string;
 
     /** Custom buttons to display on the activity. */
-    buttons?: string[];
+    buttons?: [
+        {
+            /** Set buttons label */
+            label: string;
+            
+            /** Direct to url when click the buttons */
+            url: string;
+        }
+    ]
 
     /** Indicates whether the activity is active and being tracked. */
     instance?: boolean;
+
+    /** Activity Types (Playing, Listening, Watching, Competing) */
+    type: ActivityType;
 };
+/**
+ * Represents different types of user activities that can be set in the client.
+ * 
+ * Each activity type determines how the status is displayed in the user's profile or presence.
+ * These activities are often used in applications like Discord Rich Presence to 
+ * provide additional context about what a user is currently doing.
+ */
+export enum ActivityType {
+	/**
+	 * Indicates that the user is playing a game.
+	 * 
+	 * The activity will be displayed as "Playing {game}", where `{game}` represents the name
+	 * of the game or activity specified in the details.
+	 */
+	Playing,
+
+	/**
+	 * Indicates that the user is listening to something.
+	 * 
+	 * The activity will be displayed as "Listening to {name}", where `{name}` refers to the content 
+	 * the user is listening to. This is commonly used for music streaming applications or audio-related activities.
+	 */
+	Listening,
+
+	/**
+	 * Indicates that the user is watching something.
+	 * 
+	 * The activity will be displayed as "Watching {details}", where `{details}` provides
+	 * information about the video, stream, or content the user is viewing.
+	 */
+	Watching,
+
+	/**
+	 * Indicates that the user is competing in an event or activity.
+	 * 
+	 * The activity will be displayed as "Competing in {name}", where `{name}` represents the competition
+	 * or event the user is participating in. This is often used for tournaments or competitive events.
+	 */
+    Competing,
+}
+
 
 /**
  * Generates a unique subscription key for a given event and its arguments.
