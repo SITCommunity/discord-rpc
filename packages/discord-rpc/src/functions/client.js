@@ -17,7 +17,8 @@ const {
 const {
   RPCCommands,
   RPCEvents,
-  RelationshipTypes
+  RelationshipTypes,
+  ActivityType
 } = require('./constants.js');
 const {
   pid: getPid,
@@ -331,6 +332,8 @@ class RpcClient extends EventEmitter {
     let assets;
     let party;
     let secrets;
+    let type = ActivityType.Playing;
+
     if (args.startTimestamp || args.endTimestamp) {
       timestamps = {
         start: args.startTimestamp,
@@ -373,12 +376,16 @@ class RpcClient extends EventEmitter {
         spectate: args.spectateSecret,
       };
     };
+    if(args.type) {
+      type = args.type;
+    };
 
     return this.request(RPCCommands.SET_ACTIVITY, {
       pid,
       activity: {
         state: args.state,
         details: args.details,
+        type,
         timestamps,
         assets,
         party,

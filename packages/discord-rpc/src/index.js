@@ -9,9 +9,10 @@
 
 const util = require('./functions/util');
 
-// Rpc Register & Client classes
+// Rpc Main Classes
 module.exports = {
     RpcClient: require('./functions/client'),
+    ActivityType: require('./functions/constants').ActivityType,
     register(id) {
         return util.register(`discord-${id}`);
     },
