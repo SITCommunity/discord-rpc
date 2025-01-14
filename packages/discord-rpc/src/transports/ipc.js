@@ -14,7 +14,8 @@ const {
   uuid
 } = require('../functions/util.js');
 const {
-  RpcError
+  RpcError,
+  errorCode
 } = require('../error');
 
 const OPCodes = {
