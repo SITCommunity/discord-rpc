@@ -21,7 +21,6 @@
  * @property {'ConnectionFailed'} ConnectionFailed
  * @property {'MissingEndpoint'} MissingEndpoint
  * @property {'FailLoadProtocol'} FailLoadProtocol
- * @property {'WsError'} WsError
  */
 
 const keys = [
@@ -36,7 +35,6 @@ const keys = [
     'ConnectionFailed',
     'MissingEndpoint',
     'FailLoadProtocol',
-    'WsError',
 ];
 
 /**

@@ -36,7 +36,7 @@ npm i dc-rpc
 const { RpcClient } = require('dc-rpc');
 
 // Create an instance of Discord-RPC
-const client = new RpcClient({ transport: 'ipc' }); // removed websocket
+const client = new RpcClient(); // removed websocket
 
 // ================================================================
 

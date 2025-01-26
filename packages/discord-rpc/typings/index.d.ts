@@ -19,12 +19,6 @@ export * from './options';
  */
 export * from './transports/ipc';
 
-/**
- * Re-exports the WebSocket transport module.
- * This transport is used for establishing WebSocket-based connections to Discord's services.
- */
-export * from './transports/websocket';
-
 // Registers
 /**
  * Registers a new identifier for the Discord RPC system.

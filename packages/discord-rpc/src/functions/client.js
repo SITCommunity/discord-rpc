@@ -37,22 +37,15 @@ function subKey(event, args) {
 };
 
 class RpcClient extends EventEmitter {
-  constructor(options = {}) {
+  constructor() {
     super();
 
-    this.options = options;
     this.accessToken = null;
     this.clientId = null;
     this.application = null;
     this.user = null;
 
-    const Transport = transports[this.options.transport];
-    if (!Transport) {
-      throw new RpcTypeError(
-        errorCode.InvalidTransport,
-        this.options.transport
-      );
-    };
+    const Transport = transports['ipc'];
 
     this.fetch = (method, path, { data, query } = {}) =>
       fetch(`${this.fetch.endpoint}${path}${query ? new URLSearchParams(query) : ''}`, {

@@ -1,5 +1,4 @@
 import { EventEmitter } from "events";
-import { RpcClientOptions } from "../options";
 
 /**
  * Represents an error object encountered during RPC operations.
@@ -230,15 +229,6 @@ export declare function subKey(event: string, args: string): string;
  * Provides methods for authentication, managing user presence, and interacting with Discord features.
  */
 export declare class RpcClient extends EventEmitter {
-    /**
-     * Creates an instance of the RpcClient.
-     * @param options Optional configuration options for the client.
-     */
-    constructor(options?: RpcClientOptions);
-
-    /** The configuration options for the client. */
-    options: RpcClientOptions;
-
     /** The access token used for authenticated requests. */
     accessToken: string | null;
 

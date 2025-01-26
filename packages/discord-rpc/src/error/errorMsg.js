@@ -21,7 +21,6 @@ const errorMsg = {
     [errorCode.ConnectionFailed]: 'Could not connect to RPC',
     [errorCode.MissingEndpoint]: 'Could not find endpoint',
     [errorCode.FailLoadProtocol]: (e) => `Protocol registration failed. Details: ${e}`,
-    [errorCode.WsError]: (e) => `Error while closing connection. Details: ${e}`,
 };
 
 module.exports = errorMsg;

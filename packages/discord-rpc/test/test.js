@@ -18,7 +18,7 @@ afterEach(() => {
 describe('Discord RPC Tests', () => {
     test('Test IPC RPC', async () => {
         const Id = '1314548864682037259';
-        const client = new RpcClient({ transport: 'ipc' });
+        const client = new RpcClient();
 
         register(Id);
         await client.login({ clientId: Id });
