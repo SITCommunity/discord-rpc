@@ -2,7 +2,7 @@
 
 All notable changes from Discord-RPC will be documented in this file.
 
-## [unreleased]
+## [1.5.9] - 2025-01-26
 
 ### Bug Fixes
 
