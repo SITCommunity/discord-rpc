@@ -2,6 +2,22 @@
 
 All notable changes from Discord-RPC will be documented in this file.
 
+## [unreleased]
+
+### Bug Fixes
+
+- Missing register-scheme dependencies
+- Typo error code Fail Load Protocol
+- ErrorCode is not defined
+
+### Typings
+
+- Add documentation activity type
+
+### Removed
+
+- websocket
+
 ## [1.5.8] - 2024-12-13
 
 ### Bug Fixes

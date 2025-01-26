@@ -52,6 +52,7 @@ commit_parsers = [
 	{ message = "^typings", group = "<!-- 10 --> Typings"},
   { message = "^revamp", group = "<!-- 11 --> Revamp" },
   { message = "^new", group = "<!-- 12 --> New" },
+  { message = "^remove", group = "<!-- 13 --> Removed" },
 ]
 
 filter_commits = true
