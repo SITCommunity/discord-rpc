@@ -58,13 +58,11 @@
   },
   "packageManager": "pnpm@9.8.0",
   "dependencies": {
+    "register-scheme": "github:devsnek/node-register-scheme",
     "events": "^3.3.0",
     "node-fetch": "^2.7.0",
     "tslib": "^2.7.0",
     "ws": "^8.14.2"
-  },
-  "optionalDependencies": {
-    "register-scheme": "github:devsnek/node-register-scheme"
   },
   "devDependencies": {
     "@favware/cliff-jumper": "^5.0.0",
