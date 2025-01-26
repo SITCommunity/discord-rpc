@@ -25,7 +25,7 @@ try {
   try {
     register = require('register-scheme');
   } catch (e) {
-    throw new RpcError(errorCode.FailLoadProtocl, e.stack); // eslint-disable-line no-empty
+    throw new RpcError(errorCode.FailLoadProtocol, e.stack); // eslint-disable-line no-empty
   };
 };
 
